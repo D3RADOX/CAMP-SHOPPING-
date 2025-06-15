@@ -1,1 +1,27 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diabetic Food List Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍏 Diabetic Food List Helper</h1>
+    <input type="text" id="foodInput" placeholder="Enter food item...">
+    <select id="category">
+      <option value="good">✅ Good</option>
+      <option value="caution">⚠️ Caution</option>
+      <option value="avoid">❌ Avoid</option>
+    </select>
+    <button onclick="addItem()">Add</button>
+
+    <ul id="foodList"></ul>
+
+    <button onclick="downloadList()">📥 Export List</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
